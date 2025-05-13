@@ -133,10 +133,14 @@ const TaskList = () => {
                 onChange={handleFileChange}
                 className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"
               />
+              <span>
+                {selectedFile ? selectedFile.name : "No file chosen"}
+              </span>
               <button
                 onClick={handleImport}
                 disabled={!selectedFile}
                 className="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                title={!selectedFile ? "Please select a file to enable import" : ""}
               >
                 Import Tasks
               </button>
