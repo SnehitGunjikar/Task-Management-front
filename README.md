@@ -2,6 +2,9 @@
 
 A React-based frontend for the Task Management application. This application provides a user-friendly interface for managing tasks, including features like task creation, editing, deletion, and bulk import/export functionality.
 
+frontend:https://task-management-front-green.vercel.app/tasks
+backend: https://task-management-back-qqaj.onrender.com
+
 ## Features
 
 - User authentication (login/register)
